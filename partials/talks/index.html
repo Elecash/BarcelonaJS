@@ -1,0 +1,22 @@
+<section class="talks">
+  <div class="wrap center-xs">
+    <h2 class="title">Talks</h2>
+    <div class="row center-xs">
+      {{#each nextEvent.talks}}
+        <article class="speaker col-xs-12 col-md-6">
+          <img class="avatar" src="{{performer.image}}">
+          <h4 class="name">{{performer.name}}</h4>
+          <h6 class="talk-title">{{title}}</h6>
+          <p class="description">
+            {{description}}
+            <br>
+            <span class="level"><b>Language</b>: {{inLanguage}}</span>
+          </p>
+          <span class="twitter">
+            <a href="https://twitter.com/{{performer.twitter}}">@{{performer.twitter}}</a>
+          </span>
+        </article>
+      {{/each}}
+    </div>
+  </div>
+</section>
